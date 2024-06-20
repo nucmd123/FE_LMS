@@ -4,6 +4,7 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Auth from './pages/Auth'
 import CoinBanner from './pages/Coin'
+import TextEditor from './components/Editor'
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: 'coin',
         element: <CoinBanner />,
+      },
+      {
+        path: 'text-editor',
+        element: <TextEditor />,
       },
     ],
   },

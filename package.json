@@ -7,15 +7,22 @@
     "dev": "vite --open",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "node ./postinstall.js"
   },
   "dependencies": {
     "@heroicons/react": "2.1.3",
+    "@tinymce/tinymce-react": "5.1.1",
+    "dompurify": "3.1.5",
+    "fs-extra": "11.2.0",
+    "html-react-parser": "5.1.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "6.23.1"
+    "react-router-dom": "6.23.1",
+    "tinymce": "7.2.0"
   },
   "devDependencies": {
+    "@types/dompurify": "3.0.5",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
